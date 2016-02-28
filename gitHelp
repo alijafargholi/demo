@@ -1,0 +1,9 @@
+# Git check user info
+git config --global --list
+# Git assign user name and emial
+git config --global user.name "Ali Jafargholi"
+git confid --global user.email "ali.jafargholi@gmail.com"
+# Getting the status of the git repo
+git status
+# Sending all changes to the remote repo
+git push origin
