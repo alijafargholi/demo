@@ -1,0 +1,64 @@
+# Git check user info
+git config --global --list
+
+# Git assign user name and emial
+git config --global user.name "Ali Jafargholi"
+git confid --global user.email "ali.jafargholi@gmail.com"
+git config --global core.editor "vim"
+
+# Getting the status of the git repo
+git status
+# Sending all changes to the remote repo
+git push origin
+
+# Pulling latest changes from origin to the local repo
+git pull origin master
+
+# Adding the track files and commiting at the same time
+git commit -am "some comments"
+
+# List of track file by git
+git ls-files
+
+# Unstaging a file
+git reset HEAD <file>
+
+# Undo the changes and go back to where the file was last commited
+git checkout -- <file>
+
+# Move or rename a file (Git will stage the file after the mv)
+git mv <old-name> <new-name>
+# If the file has been mv in the systme, not using git, this will clean up 
+git add -A
+
+# Removing the tracking file
+git rm <file-name>
+
+# Undo the deletion
+git reset HEAD <file>
+git checkout -- <file>
+
+# Get history (log), the short ID
+git log --all --graph --decorate --oneline
+git log --abbrev-commit
+git log --oneline --graph --decorate
+git log --follow -- <file> # History of a file
+git show <commit-id>
+
+# Git setup aliases
+git config --global alias.<name-of-comment> "<the comments>"
+Example --> git config --global alias.ghist "log --all --graph --decorate --oneline"
+
+
+
+
+
+# ???
+git add -u
+
+
+
+
+
+
+
