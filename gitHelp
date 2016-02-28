@@ -1,10 +1,21 @@
 # Git check user info
 git config --global --list
+
 # Git assign user name and emial
 git config --global user.name "Ali Jafargholi"
 git confid --global user.email "ali.jafargholi@gmail.com"
 git config --global core.editor "vim"
+
 # Getting the status of the git repo
 git status
 # Sending all changes to the remote repo
 git push origin
+
+# Pulling latest changes from origin to the local repo
+git pull origin master
+
+# Adding the track files and commiting at the same time
+git commit -am "some comments"
+
+# List of track file by git
+git ls-files
