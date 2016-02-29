@@ -1,3 +1,6 @@
+# Some cool stuff for nice shell prompt
+https://github.com/mathiasbynens/dotfiles/blob/master/.bash_prompt
+
 # Git check user info
 git config --global --list
 
@@ -49,8 +52,35 @@ git show <commit-id>
 git config --global alias.<name-of-comment> "<the comments>"
 Example --> git config --global alias.ghist "log --all --graph --decorate --oneline"
 
+# to get difference bettwen last commit and current working directory 
+git diff HEAD
 
+# Comparing the staged area with last commit
+git diff --staged HEAD
 
+# Difference for just one file
+git diff -- <file>
+
+# Diff between two commit
+git diff <id> <id>or<HEAD>
+
+# Compare HEAD and one commit before
+git diff HEAD HEAD^
+
+# Compare local and origin
+git diff master origin/master
+
+# Seeing the branches, including on the remote repo
+git branch -a
+
+# Renaming braches
+git branch -m <old-branch> <new-branch>
+
+# Deleting a branch
+git branch -d <bvranch-name>
+
+# Merging with fast-track off
+git merge <other-branch> <master-branch> --no--ff
 
 
 # ???
