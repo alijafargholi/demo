@@ -1,2 +1,3 @@
 # demo
-testing and practicing Git
+Testing and practicing Git.
+Some personal git shor cut.
